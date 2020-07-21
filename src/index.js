@@ -4,10 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+import 'mobx-react-lite/batchingForReactDom'
+
+import storeInstance from './store/Store'
+export const StoreContext = React.createContext()
+
 ReactDOM.render(
-  <React.StrictMode>
+  <StoreContext.Provider value={storeInstance}>
     <App />
-  </React.StrictMode>,
+  </StoreContext.Provider>,
   document.getElementById('root')
 );
 
