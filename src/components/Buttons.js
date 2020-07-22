@@ -8,7 +8,7 @@ const Buttons = () => {
     const store = React.useContext(StoreContext)
 
     return useObserver(() => (
-        <div>
+        <div class='buttons-container'>
             <button type="button" className="btn btn-light align-top" onClick={() => store.updateCount()}>
                 <i className="fa fa-thumbs-o-up" />
                 <FaRegThumbsUp /> Like
