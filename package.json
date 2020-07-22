@@ -50,6 +50,7 @@
     "react-app-polyfill": "^1.0.6",
     "react-dev-utils": "^10.2.1",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
     "resolve": "1.15.0",
     "resolve-url-loader": "3.1.1",
     "sass-loader": "8.0.2",
@@ -150,14 +151,15 @@
     ],
     "presets": [
       "react-app",
-      ["@babel/preset-env",
+      [
+        "@babel/preset-env",
         {
-            "targets": {
-              "node": "10"
-            }
+          "targets": {
+            "node": "10"
           }
-        ],
-        "@babel/preset-react"
+        }
+      ],
+      "@babel/preset-react"
     ]
   },
   "devDependencies": {

@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaRegThumbsUp, FaRegComment } from 'react-icons/fa'
 import { useObserver } from 'mobx-react'
 import { StoreContext } from '../index'
 
@@ -10,12 +11,12 @@ const Buttons = () => {
         <div>
             <button type="button" className="btn btn-light align-top" onClick={() => store.updateCount()}>
                 <i className="fa fa-thumbs-o-up" />
-                Like
+                <FaRegThumbsUp /> Like
             </button>
 
             <button type="button" className="btn btn-light" onClick={() => document.getElementById('comment').focus()}>
                 <i className="fa fa-comment-o" />
-                Comment
+                <FaRegComment /> Comment
             </button>
 
         </div>
