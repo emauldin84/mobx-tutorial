@@ -18,7 +18,7 @@ const Form = () => {
     }
 
     return useObserver(() => (
-        <div>
+        <div className='form-container'>
             <form onSubmit={handleSubmit}>
                 <input type='text' id='comment' name='comment' placeholder='Leave a comment...' value={comment} onChange={handleChange}/>
 

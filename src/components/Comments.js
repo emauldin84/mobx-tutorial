@@ -6,10 +6,10 @@ import { StoreContext } from '../index'
 const Comments = () => {
     const store = useContext(StoreContext)
     return useObserver(() => (
-        <div>
+        <div className='comments-container'>
             {store.comments.map((comment, index) => {
                 return (
-                    <div key={index}>
+                    <div key={index} className='comment-container'>
                         <p>{comment}</p>
                     </div>
                 )

@@ -9,12 +9,12 @@ const Buttons = () => {
 
     return useObserver(() => (
         <div class='buttons-container'>
-            <button type="button" className="btn btn-light align-top" onClick={() => store.updateCount()}>
+            <button type="button" className="btn btn-count" onClick={() => store.updateCount()}>
                 <i className="fa fa-thumbs-o-up" />
                 <FaRegThumbsUp /> Like
             </button>
 
-            <button type="button" className="btn btn-light" onClick={() => document.getElementById('comment').focus()}>
+            <button type="button" className="btn btn-count" onClick={() => document.getElementById('comment').focus()}>
                 <i className="fa fa-comment-o" />
                 <FaRegComment /> Comment
             </button>

@@ -15,7 +15,7 @@ const Card = () => {
     return useObserver(() => (
         <div className="card">
             <img src={imageStore.imageUrl} className="card-img-top" alt="..." />
-            <button className="btn-next" onClick={imageStore.fetchImage}>
+            <button className="btn-next btn" onClick={imageStore.fetchImage}>
                 <FaChevronRight />
             </button>
             <Count />
